@@ -1,0 +1,316 @@
+.text {
+    font-size: 3.5rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    color: red;
+}
+.fall_img1 {
+    position: absolute;
+    left: 46px;
+    z-index: 100;
+    transform: translateY(-40%);
+    animation: fall_imgMove1 10s infinite linear;
+}
+
+.fall_img2 {
+    position: absolute;
+    left: 60px;
+    z-index: 100;
+    transform: translateY(45%);
+    animation: fall_imgMove2 10s infinite linear;
+}
+
+.fall_img3 {
+    position: absolute;
+    left: 39px;
+    top: 250px;
+    z-index: 100;
+    animation: fall_imgMove3 6s infinite linear;
+}
+
+.fall_img4 {
+    position: absolute;
+    left: 47px;
+    top: 260px;
+    z-index: 100;
+    animation: fall_imgMove4 7s infinite linear;
+}
+
+
+
+.fall_img5 {
+    position: absolute;
+    left: 46px;
+    top: 260px;
+    z-index: 100;
+    animation: fall_imgMove2 7s infinite linear;
+}
+
+.fall_img6 {
+    position: absolute;
+    left: 60px;
+    top: 290px;
+    z-index: 100;
+    animation: fall_imgMove1 6s infinite linear;
+}
+
+.fall_img7 {
+    position: absolute;
+    left: 39px;
+    top: 279px;
+    z-index: 100;
+    animation: fall_imgMove4 9s infinite linear;
+}
+
+.fall_img8 {
+    position: absolute;
+    left: 47px;
+    top: 320px;
+    z-index: 100;
+    animation: fall_imgMove3 10s infinite linear;
+}
+
+
+
+
+.basket_img {
+    position: absolute;
+    bottom: -400px;
+    left: -50px;
+}
+
+/* @keyframes fall_imgMove {
+    0% {
+        top: 250px;
+    }
+
+    25% {
+        top: 400px;
+    }
+
+    100%{
+        top: 570px;
+        opacity: 0;
+        visibility: hidden;
+        display: none;
+        overflow: hidden;
+    }
+} */
+
+@keyframes fall_imgMove1 {
+
+    0% {
+        opacity: 1;
+        transform: translateY(-30px);
+    }
+
+    25% {
+        transform: translateY(150px);
+    }
+
+    50% {
+        transform: translate(90px, 170px);
+    }
+
+    60% {
+        transform: translate(100px, 170px);
+    }
+
+    75% {
+        transform: translate(150px, 250px);
+    }
+    99% {
+        opacity: 1;
+        transform: translate(150px, 250px);
+    }
+    100% {
+        transform: translateY(-30px);
+        visibility: hidden;
+        opacity: 0;
+        display: none;
+    }
+}
+
+@keyframes fall_imgMove2 {
+
+    0% {
+        opacity: 1;
+        transform: translateY(-30px);
+    }
+
+    25% {
+        transform: translateY(150px);
+    }
+
+    50% {
+        transform: translate(-90px, 170px);
+    }
+
+    60% {
+        transform: translate(-100px, 190px);
+    }
+
+    75% {
+        transform: translate(-110px, 210px);
+    }
+    99% {
+        opacity: 1;
+        transform: translate(-110px, 210px);
+    }
+    100% {
+        transform: translateY(-30px);
+        visibility: hidden;
+        opacity: 0;
+        display: none;
+    }
+}
+
+@keyframes fall_imgMove3 {
+
+    0% {
+        transform: translateY(-30px);
+        opacity: 1;
+    }
+
+    25% {
+        transform: translateY(150px);
+    }
+
+    50% {
+        transform: translate(90px, 170px);
+    }
+
+    60% {
+        transform: translate(100px, 170px);
+    }
+
+    75% {
+        transform: translate(150px, 250px);
+    }
+    
+    99% {
+        opacity: 1;
+        transform: translate(150px, 250px);
+    }
+    100% {
+        transform: translateY(-30px);
+        visibility: hidden;
+        opacity: 0;
+        display: none;
+    }
+}
+
+@keyframes fall_imgMove4 {
+
+    0% {
+        opacity: 1;
+        transform: translateY(-30px);
+    }
+
+    25% {
+        transform: translateY(150px);
+    }
+
+    50% {
+        transform: translate(-90px, 170px);
+    }
+
+    60% {
+        transform: translate(-100px, 190px);
+    }
+
+    75% {
+        transform: translate(-110px, 210px);
+    }
+
+    99% {
+        opacity: 1;
+        transform: translate(-110px, 210px);
+    }
+
+    100% {
+        transform: translateY(-30px);
+        visibility: hidden;
+        opacity: 0;
+        display: none;
+    }
+}
+
+
+.hand_img {
+    z-index: 200;
+    animation: handMove 5s infinite linear;
+}
+
+@keyframes handMove {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(35px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chips Lover</title>
+    <link rel="stylesheet" href="s.css">
+    <!-- --tw---    -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body>
+    <div class=" mx-5 mt-0 md:max-w-6xl gap-5 mx-auto grid md:grid-cols-2  ">
+        <div class=" flex flex-col justify-center text-center w-[95%] mx-auto my-auto">
+            <h1 class="text">Live beautifully</h1>
+            <h1 class="text">dream passionately</h1>
+            <h1 class="text">&</h1>
+            <h1 class="text">Eat Chocolate</h1>
+        </div>
+        <div class="bg-red-900 relative md:mt-0">
+            <img class="hand_img ml-auto  w-[50%]" src="packet.png" alt="img" />
+            <div class="ml-auto bg-green-900">
+                <img class="w-[5%] fall_img1 " src="green.svg" alt="img" />
+                <img class="w-[5%] fall_img2 " src="pink.svg" alt="img" />
+                <img class="w-[5%] fall_img3 " src="brawn.svg" alt="img" />
+                <img class="w-[5%] fall_img4 " src="yellow.svg" alt="img" />
+
+                <img class="w-[5%] fall_img5 " src="green.svg" alt="img" />
+                <img class="w-[5%] fall_img6 " src="pink.svg" alt="img" />
+                <img class="w-[5%] fall_img7 " src="brawn.svg" alt="img" />
+                <img class="w-[5%] fall_img8 " src="yellow.svg" alt="img" />
+
+                <img class="w-[50%] basket_img " src="basket.svg" alt="img" />
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,271 @@
+.text {
+    font-size: 3.5rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    color: red;
+}
+
+.fall_img1 {
+    position: absolute;
+    right: 40%;
+    z-index: 100;
+    transform: translateY(-40%);
+    animation: fall_imgMove1 10s infinite linear;
+}
+
+.fall_img2 {
+    position: absolute;
+    right: 42%;
+    z-index: 100;
+    transform: translateY(45%);
+    animation: fall_imgMove2 10s infinite linear;
+}
+
+.fall_img3 {
+    position: absolute;
+    right: 38%;
+    top: 250px;
+    z-index: 100;
+    animation: fall_imgMove3 6s infinite linear;
+}
+
+.fall_img4 {
+    position: absolute;
+    right: 38%;
+    top: 266px;
+    z-index: 100;
+    animation: fall_imgMove4 7s infinite linear;
+}
+
+
+
+.fall_img5 {
+    position: absolute;
+    right: 45%;
+    top: 269px;
+    z-index: 100;
+    animation: fall_imgMove2 7s infinite linear;
+}
+
+.fall_img6 {
+    position: absolute;
+    right: 42%;
+    top: 290px;
+    z-index: 100;
+    animation: fall_imgMove1 6s infinite linear;
+}
+
+.fall_img7 {
+    position: absolute;
+    right: 37%;
+    top: 289px;
+    z-index: 100;
+    animation: fall_imgMove4 9s infinite linear;
+}
+
+.fall_img8 {
+    position: absolute;
+    right: 42%;
+    top: 320px;
+    z-index: 100;
+    animation: fall_imgMove3 10s infinite linear;
+}
+
+
+
+/* @keyframes fall_imgMove {
+    0% {
+        top: 250px;
+    }
+
+    25% {
+        top: 400px;
+    }
+
+    100%{
+        top: 570px;
+        opacity: 0;
+        visibility: hidden;
+        display: none;
+        overflow: hidden;
+    }
+} */
+
+@keyframes fall_imgMove1 {
+
+    0% {
+        opacity: 1;
+        transform: translateY(-30px);
+    }
+
+    25% {
+        transform: translateY(150px);
+    }
+
+    50% {
+        transform: translate(90px, 170px);
+    }
+
+    60% {
+        transform: translate(100px, 170px);
+    }
+
+    75% {
+        transform: translate(120px, 250px);
+    }
+
+    99% {
+        opacity: 1;
+        transform: translate(120px, 250px);
+    }
+
+    100% {
+        transform: translateY(-30px);
+        visibility: hidden;
+        opacity: 0;
+        display: none;
+    }
+}
+
+@keyframes fall_imgMove2 {
+
+    0% {
+        opacity: 1;
+        transform: translateY(-30px);
+    }
+
+    25% {
+        transform: translateY(150px);
+    }
+
+    50% {
+        transform: translate(-90px, 170px);
+    }
+
+    60% {
+        transform: translate(-100px, 190px);
+    }
+
+    75% {
+        transform: translate(-101px, 210px);
+    }
+
+    99% {
+        opacity: 1;
+        transform: translate(-101px, 210px);
+    }
+
+    100% {
+        transform: translateY(-30px);
+        visibility: hidden;
+        opacity: 0;
+        display: none;
+    }
+}
+
+@keyframes fall_imgMove3 {
+
+    0% {
+        transform: translateY(-30px);
+        opacity: 1;
+    }
+
+    25% {
+        transform: translateY(150px);
+    }
+
+    50% {
+        transform: translate(90px, 170px);
+    }
+
+    60% {
+        transform: translate(100px, 170px);
+    }
+
+    75% {
+        transform: translate(120px, 250px);
+    }
+
+    99% {
+        opacity: 1;
+        transform: translate(120px, 250px);
+    }
+
+    100% {
+        transform: translateY(-30px);
+        visibility: hidden;
+        opacity: 0;
+        display: none;
+    }
+}
+
+@keyframes fall_imgMove4 {
+
+    0% {
+        opacity: 1;
+        transform: translateY(-30px);
+    }
+
+    25% {
+        transform: translateY(150px);
+    }
+
+    50% {
+        transform: translate(-90px, 170px);
+    }
+
+    60% {
+        transform: translate(-100px, 190px);
+    }
+
+    75% {
+        transform: translate(-110px, 210px);
+    }
+
+    99% {
+        opacity: 1;
+        transform: translate(-110px, 210px);
+    }
+
+    100% {
+        transform: translateY(-30px);
+        visibility: hidden;
+        opacity: 0;
+        display: none;
+    }
+}
+
+
+
+.basket_img {
+    position: absolute;
+    right: 17%;
+    transform: translateY(150px);
+}
+
+
+@media only screen and (max-width:1100px){
+    .basket_img {
+        transform: translateY(248px);
+    }
+}
+
+.hand_img {
+    z-index: 200;
+    animation: handMove 5s infinite linear;
+}
+
+@keyframes handMove {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(35px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
